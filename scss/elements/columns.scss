@@ -1,0 +1,70 @@
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    @for $i from 1 through 12 {
+      &.spans-#{$i} {
+        flex: none;
+        width: percentage($i/12);
+      }
+      &.skips-#{$i} {
+        margin-left: percentage($i/12);
+      }
+    }
+
+    @include breakpoint-sm {
+      @for $i from 1 through 12 {
+        &.sm\:spans-#{$i} {
+          flex: none;
+          width: percentage($i/12);
+        }
+        &.sm\:skips-#{$i} {
+          margin-left: percentage($i/12);
+        }
+      }
+    }
+
+    @include breakpoint-md {
+      @for $i from 1 through 12 {
+        &.md\:spans-#{$i} {
+          flex: none;
+          width: percentage($i/12);
+        }
+        &.md\:skips-#{$i} {
+          margin-left: percentage($i/12);
+        }
+      }
+    }
+
+    @include breakpoint-lg {
+      @for $i from 1 through 12 {
+        &.lg\:spans-#{$i} {
+          flex: none;
+          width: percentage($i/12);
+        }
+        &.lg\:skips-#{$i} {
+          margin-left: percentage($i/12);
+        }
+      }
+    }
+
+    @include breakpoint-xl {
+      @for $i from 1 through 12 {
+        &.xl\:spans-#{$i} {
+          flex: none;
+          width: percentage($i/12);
+        }
+        &.xl\:skips-#{$i} {
+          margin-left: percentage($i/12);
+        }
+      }
+    }
+  }
+}

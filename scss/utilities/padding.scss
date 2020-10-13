@@ -1,0 +1,45 @@
+.p {
+  @include responsive {
+    &v-auto {
+      padding-top: auto;
+      padding-bottom: auto;
+    }
+
+    &h-auto {
+      padding-right: auto;
+      padding-left: auto;
+    }
+
+    @each $suffix, $size in $sizes {
+      &-#{$suffix} {
+        padding: $size;
+      }
+
+      &v-#{$suffix} {
+        padding-top: $size;
+        padding-bottom: $size;
+      }
+
+      &h-#{$suffix} {
+        padding-right: $size;
+        padding-left: $size;
+      }
+
+      &t-#{$suffix} {
+        padding-top: $size;
+      }
+
+      &r-#{$suffix} {
+        padding-right: $size;
+      }
+
+      &b-#{$suffix} {
+        padding-bottom: $size;
+      }
+
+      &l-#{$suffix} {
+        padding-left: $size;
+      }
+    }
+  }
+}

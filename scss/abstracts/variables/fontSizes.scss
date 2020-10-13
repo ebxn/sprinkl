@@ -1,0 +1,23 @@
+$font-xs: .75rem !default;
+$font-sm: .875rem !default;
+$font-md: 1rem !default;
+$font-lg: 1.125rem !default;
+$font-xl: 1.25rem !default;
+$font-2xl: 1.5rem !default;
+$font-3xl: 1.875rem !default;
+$font-4xl: 2.25rem !default;
+$font-5xl: 3rem !default;
+$font-6xl: 4rem !default;
+
+$fontSizes: (
+  xs: $font-xs,
+  sm: $font-sm,
+  md: $font-md,
+  lg: $font-lg,
+  xl: $font-xl,
+  2xl: $font-2xl,
+  3xl: $font-3xl,
+  4xl: $font-4xl,
+  5xl: $font-5xl,
+  6xl: $font-6xl,
+);

@@ -1,0 +1,25 @@
+$shadow-color-light: #000032 !default;
+$shadow-color-dark: #00000f !default;
+
+$shadow-none: none !default;
+$shadow-inset: inset 0 2px 4px 0 rgba($shadow-color-light, 0.15) !default;
+$shadow-xs: 0 1px 3px 0 rgba($shadow-color-light, 0.1),
+            0 1px 2px 0 rgba($shadow-color-dark, 0.06) !default;
+$shadow-sm: 0 4px 6px -1px rgba($shadow-color-light, 0.1),
+            0 2px 4px -1px rgba($shadow-color-dark, 0.06) !default;
+$shadow-md: 0 10px 15px -3px rgba($shadow-color-light, 0.1),
+            0 4px 6px -2px rgba($shadow-color-dark, 0.05) !default;
+$shadow-lg: 0 16px 24px -5px rgba($shadow-color-light, 0.1),
+            0 8px 8px -3px rgba($shadow-color-dark, 0.15) !default;
+$shadow-xl: 0 24px 50px -6px rgba($shadow-color-light, 0.1),
+            0 12px 20px -4px rgba($shadow-color-dark, 0.3) !default;
+
+$shadows: (
+  none: $shadow-none,
+  inset: $shadow-inset,
+  xs: $shadow-xs,
+  sm: $shadow-sm,
+  md: $shadow-md,
+  lg: $shadow-lg,
+  xl: $shadow-xl
+);

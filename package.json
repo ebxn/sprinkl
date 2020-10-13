@@ -7,11 +7,10 @@
     "email": "ebengtuff@gmail.com"
   },
   "description": "A DESCRIPTION",
-  "main": "dist/sprinkl.min.css",
   "style": "dist/sprinkl.min.css",
   "files": [
-    "dist",
-    "scss",
+    "dist/*.css",
+    "scss/**/*.scss",
     "LICENSE"
   ],
   "devDependencies": {

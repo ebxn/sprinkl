@@ -1,0 +1,45 @@
+.m {
+  @include responsive {
+    &v-auto {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    &h-auto {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @each $suffix, $size in $sizes {
+      &-#{$suffix} {
+        margin: $size;
+      }
+
+      &v-#{$suffix} {
+        margin-top: $size;
+        margin-bottom: $size;
+      }
+
+      &h-#{$suffix} {
+        margin-right: $size;
+        margin-left: $size;
+      }
+
+      &t-#{$suffix} {
+        margin-top: $size;
+      }
+
+      &r-#{$suffix} {
+        margin-right: $size;
+      }
+
+      &b-#{$suffix} {
+        margin-bottom: $size;
+      }
+
+      &l-#{$suffix} {
+        margin-left: $size;
+      }
+    }
+  }
+}

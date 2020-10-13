@@ -1,0 +1,23 @@
+@mixin responsive () {
+  $breakpoints: (
+    '.sm\\:': $breakpoint-sm,
+    '.md\\:': $breakpoint-md,
+    '.lg\\:': $breakpoint-lg,
+    '.xl\\:': $breakpoint-xl
+  );
+
+  // include regular class
+  @content;
+
+  // obtains current context without the dot (eg: '.ctx' => 'ctx')
+  $context: str-slice(#{&}, 2);
+
+  // generate responsive classes
+  @each $prefix, $breakpoint in $breakpoints {
+    @media screen and (min-width: $breakpoint) {
+      @at-root #{str-insert(#{$context}, #{$prefix}, 0)} {
+        @content;
+      }
+    }
+  }
+}

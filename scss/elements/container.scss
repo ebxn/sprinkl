@@ -1,0 +1,25 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  &:not(.fluid) {
+    @include breakpoint-sm {
+      max-width: $breakpoint-sm;
+    }
+
+    @include breakpoint-md {
+      max-width: $breakpoint-md;
+    }
+
+    &:not(.narrow) {
+      @include breakpoint-lg {
+        max-width: $breakpoint-lg;
+      }
+
+      @include breakpoint-xl {
+        max-width: $breakpoint-xl;
+      }
+    }
+  }
+}
