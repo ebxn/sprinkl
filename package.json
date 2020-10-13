@@ -1,0 +1,17 @@
+{
+  "name": "sprinkl",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "ebxn",
+    "email": "ebengtuff@gmail.com"
+  },
+  "description": "A DESCRIPTION",
+  "main": "dist/sprinkl.min.css",
+  "style": "dist/sprinkl.min.css",
+  "files": [
+    "dist",
+    "scss",
+    "LICENSE"
+  ]
+}
