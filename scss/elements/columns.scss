@@ -9,7 +9,7 @@
     flex-grow: 1;
     flex-shrink: 1;
 
-    @for $i from 1 through 12 {
+    @for $i from 0 through 12 {
       &.spans-#{$i} {
         flex: none;
         width: percentage($i/12);

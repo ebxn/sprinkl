@@ -1,3 +1,5 @@
+// @use "sass:meta";
+
 @mixin responsive () {
   $breakpoints: (
     '.sm\\:': $breakpoint-sm,
@@ -20,4 +22,27 @@
       }
     }
   }
+}
+
+
+// idea: pass in arguments of: responsive / hover / active / focus
+// and then use if statements to run over them all
+// we have context to get, eg: text-green-500
+// hover: @at-root #{str-insert(#{$context}, 'hover\:', 0)
+// (have to add :hover at end too) -- same with active/focus
+@mixin createVariants ($variants...) {
+  // @debug meta.keywords($args);
+  // @debug $args[0];
+  $breakpoints: (
+    '.sm\\:': $breakpoint-sm,
+    '.md\\:': $breakpoint-md,
+    '.lg\\:': $breakpoint-lg,
+    '.xl\\:': $breakpoint-xl
+  );
+
+  // include regular class
+  @content;
+
+  // obtains current context without the dot (eg: '.ctx' => 'ctx')
+  $context: str-slice(#{&}, 2);
 }

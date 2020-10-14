@@ -50,9 +50,9 @@ h6 {
   font-weight: inherit;
 }
 
-/* remove default list styles and padding on lists with defined class names */
-ul[class],
-ol[class] {
+/* remove default list styles and padding on lists */
+ul,
+ol {
   list-style-type: none;
   padding: 0;
 }
@@ -83,6 +83,12 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+/* remove browser borders from buttons and modify cursor */
+button {
+  border: none;
+  cursor: pointer;
 }
 
 /* remove animations and transitions for people who prefer not to see them  */

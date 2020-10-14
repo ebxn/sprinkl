@@ -1,0 +1,21 @@
+$hairline: 100 !default;
+$thin: 200 !default;
+$light: 300 !default;
+$normal: 400 !default;
+$medium: 500 !default;
+$semibold: 600 !default;
+$bold: 700 !default;
+$extrabold: 800 !default;
+$black: 900 !default;
+
+$fontWeights: (
+  hairline: $hairline,
+  thin: $thin,
+  light: $light,
+  normal: $normal,
+  medium: $medium,
+  semibold: $semibold,
+  bold: $bold,
+  extrabold: $extrabold,
+  black: $black
+)
