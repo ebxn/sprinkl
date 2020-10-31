@@ -1,0 +1,11 @@
+/* @utilities/flex - shrink */
+
+.flex-shrink {
+  @include createVariants($responsive: true) {
+    flex-shrink: 1;
+
+    &-none {
+      flex-shrink: 0;
+    }
+  }
+}

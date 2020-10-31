@@ -13,13 +13,3 @@ $shadow-lg: 0 16px 24px -5px rgba($shadow-color-light, 0.1),
             0 8px 8px -3px rgba($shadow-color-dark, 0.15) !default;
 $shadow-xl: 0 24px 50px -6px rgba($shadow-color-light, 0.1),
             0 12px 20px -4px rgba($shadow-color-dark, 0.3) !default;
-
-$shadows: (
-  none: $shadow-none,
-  inset: $shadow-inset,
-  xs: $shadow-xs,
-  sm: $shadow-sm,
-  md: $shadow-md,
-  lg: $shadow-lg,
-  xl: $shadow-xl
-);

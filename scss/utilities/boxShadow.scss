@@ -1,9 +1,0 @@
-@each $shadowSize, $value in $shadows {
-  .shadow-#{$shadowSize} {
-    box-shadow: $value;
-  }
-
-  .hover\:shadow-#{$shadowSize}:hover {
-    box-shadow: $value;
-  }
-}

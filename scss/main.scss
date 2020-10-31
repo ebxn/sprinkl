@@ -6,6 +6,6 @@
 @charset 'UTF-8';
 
 @import 'abstracts/_all';
-// @import 'base/_all';
-// @import 'elements/_all';
+@import 'base/_all';
+@import 'elements/_all';
 @import 'utilities/_all';

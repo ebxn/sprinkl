@@ -1,0 +1,25 @@
+/* @utilities/flex - alignSelf */
+
+.self {
+  @include createVariants($responsive: true) {
+    &-start {
+      align-self: flex-start;
+    }
+
+    &-center {
+      align-self: center;
+    }
+
+    &-end {
+      align-self: flex-end;
+    }
+
+    &-auto {
+      align-self: auto;
+    }
+
+    &-stretch {
+      align-self: stretch;
+    }
+  }
+}

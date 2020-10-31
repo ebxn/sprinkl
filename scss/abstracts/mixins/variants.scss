@@ -1,0 +1,24 @@
+// ref: screens -> scss/variables/screens.scss
+
+@mixin createVariants ($responsive: false, $hover: false) {
+  @content;
+  $context: str-slice(#{&}, 2);
+
+  @if $responsive {
+    @each $prefix, $width in $screens {
+      @media screen and (min-width: $width) {
+        @at-root #{str-insert(#{$context}, #{$prefix}, 0)} {
+          @content;
+        }
+      }
+    }
+  }
+
+  @if $hover {
+    @at-root #{str-insert(#{$context}, ".hover\\:", 0)} {
+      &:hover {
+        @content;
+      }
+    }
+  }
+}

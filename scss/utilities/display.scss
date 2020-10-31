@@ -1,0 +1,37 @@
+/* @utilities - display */
+
+.block {
+  @include createVariants($responsive: true) {
+    display: block;
+  }
+}
+
+.inline {
+  @include createVariants($responsive: true) {
+    display: inline;
+  }
+}
+
+.inline-block {
+  @include createVariants($responsive: true) {
+    display: inline-block;
+  }
+}
+
+.flex {
+  @include createVariants($responsive: true) {
+    display: flex;
+  }
+}
+
+.inline-flex {
+  @include createVariants($responsive: true) {
+    display: inline-flex;
+  }
+}
+
+.none {
+  @include createVariants($responsive: true) {
+    display: none;
+  }
+}

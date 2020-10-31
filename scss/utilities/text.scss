@@ -1,9 +1,0 @@
-.font {
-  @include responsive {
-    @each $weight, $value in $fontWeights {
-      &-#{$weight} {
-        font-weight: $value;
-      }
-    }
-  }
-}

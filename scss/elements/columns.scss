@@ -1,6 +1,7 @@
+/* @elements - columns */
+
 .columns {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 
   .column {
@@ -9,60 +10,65 @@
     flex-grow: 1;
     flex-shrink: 1;
 
-    @for $i from 0 through 12 {
+    @for $i from 0 through 24 {
       &.spans-#{$i} {
         flex: none;
-        width: percentage($i/12);
+        width: percentage($i/24);
       }
+
       &.skips-#{$i} {
-        margin-left: percentage($i/12);
+        margin-left: percentage($i/24);
       }
     }
 
-    @include breakpoint-sm {
-      @for $i from 1 through 12 {
+    @include screen-sm {
+      @for $i from 1 through 24 {
         &.sm\:spans-#{$i} {
           flex: none;
-          width: percentage($i/12);
+          width: percentage($i/24);
         }
+
         &.sm\:skips-#{$i} {
-          margin-left: percentage($i/12);
+          margin-left: percentage($i/24);
         }
       }
     }
 
-    @include breakpoint-md {
-      @for $i from 1 through 12 {
+    @include screen-md {
+      @for $i from 1 through 24 {
         &.md\:spans-#{$i} {
           flex: none;
-          width: percentage($i/12);
+          width: percentage($i/24);
         }
+
         &.md\:skips-#{$i} {
-          margin-left: percentage($i/12);
+          margin-left: percentage($i/24);
         }
       }
     }
 
-    @include breakpoint-lg {
-      @for $i from 1 through 12 {
+    @include screen-lg {
+      @for $i from 1 through 24 {
         &.lg\:spans-#{$i} {
           flex: none;
-          width: percentage($i/12);
+          width: percentage($i/24);
         }
+
         &.lg\:skips-#{$i} {
-          margin-left: percentage($i/12);
+          margin-left: percentage($i/24);
         }
       }
     }
 
-    @include breakpoint-xl {
-      @for $i from 1 through 12 {
+    @include screen-xl {
+      @for $i from 1 through 24 {
         &.xl\:spans-#{$i} {
           flex: none;
-          width: percentage($i/12);
+          width: percentage($i/24);
         }
+
         &.xl\:skips-#{$i} {
-          margin-left: percentage($i/12);
+          margin-left: percentage($i/24);
         }
       }
     }

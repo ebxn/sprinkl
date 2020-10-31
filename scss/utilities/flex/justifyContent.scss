@@ -1,0 +1,29 @@
+/* @utilities/flex - justifyContent */
+
+.justify {
+  @include createVariants($responsive: true) {
+    &-start {
+      justify-content: flex-start;
+    }
+
+    &-center {
+      justify-content: center;
+    }
+
+    &-end {
+      justify-content: flex-end;
+    }
+
+    &-around {
+      justify-content: space-around;
+    }
+
+    &-between {
+      justify-content: space-between;
+    }
+
+    &-evenly {
+      justify-content: space-evenly;
+    }
+  }
+}

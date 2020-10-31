@@ -1,13 +1,15 @@
+/* @utilities - padding */
+
 .p {
-  @include responsive {
-    &v-auto {
+  @include createVariants($responsive: true) {
+    &y-auto {
       padding-top: auto;
       padding-bottom: auto;
     }
 
-    &h-auto {
+    &x-auto {
       padding-right: auto;
-      padding-left: auto;
+      padding-left: auto
     }
 
     @each $suffix, $size in $sizes {
@@ -15,12 +17,12 @@
         padding: $size;
       }
 
-      &v-#{$suffix} {
+      &y-#{$suffix} {
         padding-top: $size;
         padding-bottom: $size;
       }
 
-      &h-#{$suffix} {
+      &x-#{$suffix} {
         padding-right: $size;
         padding-left: $size;
       }
