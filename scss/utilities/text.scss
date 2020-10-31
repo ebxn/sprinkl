@@ -1,17 +1,20 @@
-/* @utilities - textAlign */
+/* @utilities - text */
 
-.text {
+.t {
   @include createVariants($responsive: true) {
-    &-left {
+    &-l {
       text-align: left;
     }
-    &-center {
+
+    &-c {
       text-align: center;
     }
-    &-right {
+
+    &-r {
       text-align: right;
     }
-    &-justify {
+
+    &-j {
       text-align: justify;
     }
   }

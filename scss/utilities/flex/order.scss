@@ -1,9 +1,11 @@
 /* @utilities/flex - order */
 
-.order {
+.fo {
   @include createVariants($responsive: true) {
     @for $i from 0 through 12 {
-      &-#{$i} { order: $i; }
+      &-#{$i} {
+        order: $i;
+      }
     }
   }
 }

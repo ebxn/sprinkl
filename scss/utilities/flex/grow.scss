@@ -1,10 +1,10 @@
 /* @utilities/flex - grow */
 
-.flex-grow {
+.fg {
   @include createVariants($responsive: true) {
     flex-grow: 1;
 
-    &-none {
+    &-0 {
       flex-grow: 0;
     }
   }

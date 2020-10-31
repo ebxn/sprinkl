@@ -1,20 +1,20 @@
 /* @utilities/flex - direction */
 
-.flex {
+.fd {
   @include createVariants($responsive: true) {
-    &-row {
+    &-r {
       flex-direction: row;
     }
 
-    &-row-reverse {
+    &-rr {
       flex-direction: row-reverse;
     }
 
-    &-col {
+    &-c {
       flex-direction: column;
     }
 
-    &-col-reverse {
+    &-cr {
       flex-direction: column-reverse;
     }
   }

@@ -1,0 +1,25 @@
+/* @utilities - space */
+
+.s {
+  @include createVariants($responsive: true) {
+    @each $suffix, $size in $sizes {
+      // normal
+      &x-#{$suffix} > :not(template) ~ :not(template) {
+        margin-left: $size;
+      }
+
+      &y-#{$suffix} > :not(template) ~ :not(template) {
+        margin-top: $size;
+      }
+
+      // reversed
+      &x-#{$suffix}.sx-r > :not(template) ~ :not(template) {
+        margin-right: $size;
+      }
+
+      &y-#{$suffix}.sy-r > :not(template) ~ :not(template) {
+        margin-bottom: $size;
+      }
+    }
+  }
+}

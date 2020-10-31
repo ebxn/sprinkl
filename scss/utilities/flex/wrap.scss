@@ -1,14 +1,14 @@
 /* @utilities/flex - wrap */
 
-.flex-wrap {
+.fw {
   @include createVariants($responsive: true) {
     flex-wrap: wrap;
 
-    &-reverse {
+    &-r {
       flex-wrap: wrap-reverse;
     }
 
-    &-none {
+    &-nw {
       flex-wrap: nowrap;
     }
   }

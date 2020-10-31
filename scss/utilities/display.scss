@@ -1,37 +1,29 @@
 /* @utilities - display */
 
-.block {
+.d {
   @include createVariants($responsive: true) {
-    display: block;
-  }
-}
+    &-b {
+      display: block;
+    }
 
-.inline {
-  @include createVariants($responsive: true) {
-    display: inline;
-  }
-}
+    &-i {
+      display: inline;
+    }
 
-.inline-block {
-  @include createVariants($responsive: true) {
-    display: inline-block;
-  }
-}
+    &-ib {
+      display: inline-block;
+    }
 
-.flex {
-  @include createVariants($responsive: true) {
-    display: flex;
-  }
-}
+    &-f {
+      display: flex;
+    }
 
-.inline-flex {
-  @include createVariants($responsive: true) {
-    display: inline-flex;
-  }
-}
+    &-if {
+      display: inline-flex;
+    }
 
-.none {
-  @include createVariants($responsive: true) {
-    display: none;
+    &-n {
+      display: none;
+    }
   }
 }

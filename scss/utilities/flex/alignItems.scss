@@ -1,24 +1,24 @@
 /* @utilities/flex - alignItems */
 
-.items {
+.ai {
   @include createVariants($responsive: true) {
-    &-start {
+    &-s {
       align-items: flex-start;
     }
 
-    &-center {
+    &-c {
       align-items: center;
     }
 
-    &-end {
+    &-e {
       align-items: flex-end;
     }
 
-    &-baseline {
+    &-b {
       align-items: baseline;
     }
 
-    &-stretch {
+    &-se {
       align-items: stretch;
     }
   }

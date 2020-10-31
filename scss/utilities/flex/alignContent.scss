@@ -1,29 +1,25 @@
 /* @utilities/flex - alignContent */
 
-.content {
+.ac {
   @include createVariants($responsive: true) {
-    &-start {
+    &-s {
       align-content: flex-start;
     }
 
-    &-center {
+    &-c {
       align-content: center;
     }
 
-    &-end {
+    &-e {
       align-content: flex-end;
     }
 
-    &-around {
+    &-sa {
       align-content: space-around;
     }
 
-    &-between {
+    &-sb {
       align-content: space-between;
-    }
-
-    &-evenly {
-      align-content: space-evenly;
     }
   }
 }

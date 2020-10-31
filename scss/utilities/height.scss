@@ -1,0 +1,23 @@
+/* @utilities - height */
+
+.h {
+  @include createVariants($responsive: true) {
+    @each $suffix, $size in $sizes {
+      &-#{$suffix} {
+        height: $size;
+      }
+    }
+
+    &-a {
+      height: auto;
+    }
+
+    &-f {
+      height: 100%;
+    }
+
+    &-s {
+      height: 100vh;
+    }
+  }
+}

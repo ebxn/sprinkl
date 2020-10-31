@@ -1,0 +1,29 @@
+/* @utilities - width */
+
+.w {
+  @include createVariants($responsive: true) {
+    @each $suffix, $size in $sizes {
+      &-#{$suffix} {
+        width: $size;
+      }
+    }
+
+    @for $i from 1 through 12 {
+      &-#{$i}\/12 {
+        width: percentage($i/12)
+      }
+    }
+
+    &-a {
+      width: auto;
+    }
+
+    &-f {
+      width: 100%;
+    }
+
+    &-s {
+      width: 100vw;
+    }
+  }
+}

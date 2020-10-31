@@ -1,7 +1,16 @@
+// display
 @import "./display";
 @import "./flex/_all";
-@import "./list";
+
+// spacing
 @import "./margin";
 @import "./padding";
-@import "./spaceBetween";
-@import "./textAlign";
+@import "./space";
+
+// size
+@import "./height";
+@import "./width";
+
+// text
+@import "./list";
+@import "./text";

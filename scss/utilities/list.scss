@@ -1,25 +1,25 @@
 /* @utilities - list */
 
-.list {
+.l {
   // marker styles
-  &-none {
+  &-n {
     list-style-type: none;
   }
 
-  &-disc {
+  &-dsc {
     list-style-type: disc;
   }
 
-  &-decimal {
+  &-dec {
     list-style-type: decimal;
   }
 
   // marker positions
-  &-inside {
+  &-i {
     list-style-position: inside;
   }
 
-  &-outside {
+  &-o {
     list-style-position: outside;
   }
 }
