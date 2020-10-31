@@ -6,29 +6,26 @@
 
   .column {
     display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1;
 
     @for $i from 0 through 24 {
-      &.spans-#{$i} {
+      &.span-#{$i} {
         flex: none;
         width: percentage($i/24);
       }
 
-      &.skips-#{$i} {
+      &.skip-#{$i} {
         margin-left: percentage($i/24);
       }
     }
 
     @include screen-sm {
       @for $i from 1 through 24 {
-        &.sm\:spans-#{$i} {
+        &.sm\:span-#{$i} {
           flex: none;
           width: percentage($i/24);
         }
 
-        &.sm\:skips-#{$i} {
+        &.sm\:skip-#{$i} {
           margin-left: percentage($i/24);
         }
       }
@@ -36,12 +33,12 @@
 
     @include screen-md {
       @for $i from 1 through 24 {
-        &.md\:spans-#{$i} {
+        &.md\:span-#{$i} {
           flex: none;
           width: percentage($i/24);
         }
 
-        &.md\:skips-#{$i} {
+        &.md\:skip-#{$i} {
           margin-left: percentage($i/24);
         }
       }
@@ -49,12 +46,12 @@
 
     @include screen-lg {
       @for $i from 1 through 24 {
-        &.lg\:spans-#{$i} {
+        &.lg\:span-#{$i} {
           flex: none;
           width: percentage($i/24);
         }
 
-        &.lg\:skips-#{$i} {
+        &.lg\:skip-#{$i} {
           margin-left: percentage($i/24);
         }
       }
@@ -62,12 +59,12 @@
 
     @include screen-xl {
       @for $i from 1 through 24 {
-        &.xl\:spans-#{$i} {
+        &.xl\:span-#{$i} {
           flex: none;
           width: percentage($i/24);
         }
 
-        &.xl\:skips-#{$i} {
+        &.xl\:skip-#{$i} {
           margin-left: percentage($i/24);
         }
       }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ******************************************************* */
-/*! sprinkl v0.0.3 | MIT License | github.com/ebxn/sprinkl */
+/*! sprinkl v0.1.2 | MIT License | github.com/ebxn/sprinkl */
 /*          Thank you for choosing sprinkl (・∀・)ノ        */
 /* ******************************************************* */
 /* @base - reset */
@@ -19,8 +19,8 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 figure,
 blockquote,
 dl,
@@ -35,7 +35,6 @@ html {
 
 /* set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5; }
 
@@ -119,618 +118,615 @@ samp {
   display: flex;
   flex-wrap: wrap; }
   .columns .column {
-    display: block;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 1; }
-    .columns .column.spans-0 {
+    display: block; }
+    .columns .column.span-0 {
       flex: none;
       width: 0%; }
-    .columns .column.skips-0 {
+    .columns .column.skip-0 {
       margin-left: 0%; }
-    .columns .column.spans-1 {
+    .columns .column.span-1 {
       flex: none;
       width: 4.16667%; }
-    .columns .column.skips-1 {
+    .columns .column.skip-1 {
       margin-left: 4.16667%; }
-    .columns .column.spans-2 {
+    .columns .column.span-2 {
       flex: none;
       width: 8.33333%; }
-    .columns .column.skips-2 {
+    .columns .column.skip-2 {
       margin-left: 8.33333%; }
-    .columns .column.spans-3 {
+    .columns .column.span-3 {
       flex: none;
       width: 12.5%; }
-    .columns .column.skips-3 {
+    .columns .column.skip-3 {
       margin-left: 12.5%; }
-    .columns .column.spans-4 {
+    .columns .column.span-4 {
       flex: none;
       width: 16.66667%; }
-    .columns .column.skips-4 {
+    .columns .column.skip-4 {
       margin-left: 16.66667%; }
-    .columns .column.spans-5 {
+    .columns .column.span-5 {
       flex: none;
       width: 20.83333%; }
-    .columns .column.skips-5 {
+    .columns .column.skip-5 {
       margin-left: 20.83333%; }
-    .columns .column.spans-6 {
+    .columns .column.span-6 {
       flex: none;
       width: 25%; }
-    .columns .column.skips-6 {
+    .columns .column.skip-6 {
       margin-left: 25%; }
-    .columns .column.spans-7 {
+    .columns .column.span-7 {
       flex: none;
       width: 29.16667%; }
-    .columns .column.skips-7 {
+    .columns .column.skip-7 {
       margin-left: 29.16667%; }
-    .columns .column.spans-8 {
+    .columns .column.span-8 {
       flex: none;
       width: 33.33333%; }
-    .columns .column.skips-8 {
+    .columns .column.skip-8 {
       margin-left: 33.33333%; }
-    .columns .column.spans-9 {
+    .columns .column.span-9 {
       flex: none;
       width: 37.5%; }
-    .columns .column.skips-9 {
+    .columns .column.skip-9 {
       margin-left: 37.5%; }
-    .columns .column.spans-10 {
+    .columns .column.span-10 {
       flex: none;
       width: 41.66667%; }
-    .columns .column.skips-10 {
+    .columns .column.skip-10 {
       margin-left: 41.66667%; }
-    .columns .column.spans-11 {
+    .columns .column.span-11 {
       flex: none;
       width: 45.83333%; }
-    .columns .column.skips-11 {
+    .columns .column.skip-11 {
       margin-left: 45.83333%; }
-    .columns .column.spans-12 {
+    .columns .column.span-12 {
       flex: none;
       width: 50%; }
-    .columns .column.skips-12 {
+    .columns .column.skip-12 {
       margin-left: 50%; }
-    .columns .column.spans-13 {
+    .columns .column.span-13 {
       flex: none;
       width: 54.16667%; }
-    .columns .column.skips-13 {
+    .columns .column.skip-13 {
       margin-left: 54.16667%; }
-    .columns .column.spans-14 {
+    .columns .column.span-14 {
       flex: none;
       width: 58.33333%; }
-    .columns .column.skips-14 {
+    .columns .column.skip-14 {
       margin-left: 58.33333%; }
-    .columns .column.spans-15 {
+    .columns .column.span-15 {
       flex: none;
       width: 62.5%; }
-    .columns .column.skips-15 {
+    .columns .column.skip-15 {
       margin-left: 62.5%; }
-    .columns .column.spans-16 {
+    .columns .column.span-16 {
       flex: none;
       width: 66.66667%; }
-    .columns .column.skips-16 {
+    .columns .column.skip-16 {
       margin-left: 66.66667%; }
-    .columns .column.spans-17 {
+    .columns .column.span-17 {
       flex: none;
       width: 70.83333%; }
-    .columns .column.skips-17 {
+    .columns .column.skip-17 {
       margin-left: 70.83333%; }
-    .columns .column.spans-18 {
+    .columns .column.span-18 {
       flex: none;
       width: 75%; }
-    .columns .column.skips-18 {
+    .columns .column.skip-18 {
       margin-left: 75%; }
-    .columns .column.spans-19 {
+    .columns .column.span-19 {
       flex: none;
       width: 79.16667%; }
-    .columns .column.skips-19 {
+    .columns .column.skip-19 {
       margin-left: 79.16667%; }
-    .columns .column.spans-20 {
+    .columns .column.span-20 {
       flex: none;
       width: 83.33333%; }
-    .columns .column.skips-20 {
+    .columns .column.skip-20 {
       margin-left: 83.33333%; }
-    .columns .column.spans-21 {
+    .columns .column.span-21 {
       flex: none;
       width: 87.5%; }
-    .columns .column.skips-21 {
+    .columns .column.skip-21 {
       margin-left: 87.5%; }
-    .columns .column.spans-22 {
+    .columns .column.span-22 {
       flex: none;
       width: 91.66667%; }
-    .columns .column.skips-22 {
+    .columns .column.skip-22 {
       margin-left: 91.66667%; }
-    .columns .column.spans-23 {
+    .columns .column.span-23 {
       flex: none;
       width: 95.83333%; }
-    .columns .column.skips-23 {
+    .columns .column.skip-23 {
       margin-left: 95.83333%; }
-    .columns .column.spans-24 {
+    .columns .column.span-24 {
       flex: none;
       width: 100%; }
-    .columns .column.skips-24 {
+    .columns .column.skip-24 {
       margin-left: 100%; }
     @media screen and (min-width: 640px) {
-      .columns .column.sm\:spans-1 {
+      .columns .column.sm\:span-1 {
         flex: none;
         width: 4.16667%; }
-      .columns .column.sm\:skips-1 {
+      .columns .column.sm\:skip-1 {
         margin-left: 4.16667%; }
-      .columns .column.sm\:spans-2 {
+      .columns .column.sm\:span-2 {
         flex: none;
         width: 8.33333%; }
-      .columns .column.sm\:skips-2 {
+      .columns .column.sm\:skip-2 {
         margin-left: 8.33333%; }
-      .columns .column.sm\:spans-3 {
+      .columns .column.sm\:span-3 {
         flex: none;
         width: 12.5%; }
-      .columns .column.sm\:skips-3 {
+      .columns .column.sm\:skip-3 {
         margin-left: 12.5%; }
-      .columns .column.sm\:spans-4 {
+      .columns .column.sm\:span-4 {
         flex: none;
         width: 16.66667%; }
-      .columns .column.sm\:skips-4 {
+      .columns .column.sm\:skip-4 {
         margin-left: 16.66667%; }
-      .columns .column.sm\:spans-5 {
+      .columns .column.sm\:span-5 {
         flex: none;
         width: 20.83333%; }
-      .columns .column.sm\:skips-5 {
+      .columns .column.sm\:skip-5 {
         margin-left: 20.83333%; }
-      .columns .column.sm\:spans-6 {
+      .columns .column.sm\:span-6 {
         flex: none;
         width: 25%; }
-      .columns .column.sm\:skips-6 {
+      .columns .column.sm\:skip-6 {
         margin-left: 25%; }
-      .columns .column.sm\:spans-7 {
+      .columns .column.sm\:span-7 {
         flex: none;
         width: 29.16667%; }
-      .columns .column.sm\:skips-7 {
+      .columns .column.sm\:skip-7 {
         margin-left: 29.16667%; }
-      .columns .column.sm\:spans-8 {
+      .columns .column.sm\:span-8 {
         flex: none;
         width: 33.33333%; }
-      .columns .column.sm\:skips-8 {
+      .columns .column.sm\:skip-8 {
         margin-left: 33.33333%; }
-      .columns .column.sm\:spans-9 {
+      .columns .column.sm\:span-9 {
         flex: none;
         width: 37.5%; }
-      .columns .column.sm\:skips-9 {
+      .columns .column.sm\:skip-9 {
         margin-left: 37.5%; }
-      .columns .column.sm\:spans-10 {
+      .columns .column.sm\:span-10 {
         flex: none;
         width: 41.66667%; }
-      .columns .column.sm\:skips-10 {
+      .columns .column.sm\:skip-10 {
         margin-left: 41.66667%; }
-      .columns .column.sm\:spans-11 {
+      .columns .column.sm\:span-11 {
         flex: none;
         width: 45.83333%; }
-      .columns .column.sm\:skips-11 {
+      .columns .column.sm\:skip-11 {
         margin-left: 45.83333%; }
-      .columns .column.sm\:spans-12 {
+      .columns .column.sm\:span-12 {
         flex: none;
         width: 50%; }
-      .columns .column.sm\:skips-12 {
+      .columns .column.sm\:skip-12 {
         margin-left: 50%; }
-      .columns .column.sm\:spans-13 {
+      .columns .column.sm\:span-13 {
         flex: none;
         width: 54.16667%; }
-      .columns .column.sm\:skips-13 {
+      .columns .column.sm\:skip-13 {
         margin-left: 54.16667%; }
-      .columns .column.sm\:spans-14 {
+      .columns .column.sm\:span-14 {
         flex: none;
         width: 58.33333%; }
-      .columns .column.sm\:skips-14 {
+      .columns .column.sm\:skip-14 {
         margin-left: 58.33333%; }
-      .columns .column.sm\:spans-15 {
+      .columns .column.sm\:span-15 {
         flex: none;
         width: 62.5%; }
-      .columns .column.sm\:skips-15 {
+      .columns .column.sm\:skip-15 {
         margin-left: 62.5%; }
-      .columns .column.sm\:spans-16 {
+      .columns .column.sm\:span-16 {
         flex: none;
         width: 66.66667%; }
-      .columns .column.sm\:skips-16 {
+      .columns .column.sm\:skip-16 {
         margin-left: 66.66667%; }
-      .columns .column.sm\:spans-17 {
+      .columns .column.sm\:span-17 {
         flex: none;
         width: 70.83333%; }
-      .columns .column.sm\:skips-17 {
+      .columns .column.sm\:skip-17 {
         margin-left: 70.83333%; }
-      .columns .column.sm\:spans-18 {
+      .columns .column.sm\:span-18 {
         flex: none;
         width: 75%; }
-      .columns .column.sm\:skips-18 {
+      .columns .column.sm\:skip-18 {
         margin-left: 75%; }
-      .columns .column.sm\:spans-19 {
+      .columns .column.sm\:span-19 {
         flex: none;
         width: 79.16667%; }
-      .columns .column.sm\:skips-19 {
+      .columns .column.sm\:skip-19 {
         margin-left: 79.16667%; }
-      .columns .column.sm\:spans-20 {
+      .columns .column.sm\:span-20 {
         flex: none;
         width: 83.33333%; }
-      .columns .column.sm\:skips-20 {
+      .columns .column.sm\:skip-20 {
         margin-left: 83.33333%; }
-      .columns .column.sm\:spans-21 {
+      .columns .column.sm\:span-21 {
         flex: none;
         width: 87.5%; }
-      .columns .column.sm\:skips-21 {
+      .columns .column.sm\:skip-21 {
         margin-left: 87.5%; }
-      .columns .column.sm\:spans-22 {
+      .columns .column.sm\:span-22 {
         flex: none;
         width: 91.66667%; }
-      .columns .column.sm\:skips-22 {
+      .columns .column.sm\:skip-22 {
         margin-left: 91.66667%; }
-      .columns .column.sm\:spans-23 {
+      .columns .column.sm\:span-23 {
         flex: none;
         width: 95.83333%; }
-      .columns .column.sm\:skips-23 {
+      .columns .column.sm\:skip-23 {
         margin-left: 95.83333%; }
-      .columns .column.sm\:spans-24 {
+      .columns .column.sm\:span-24 {
         flex: none;
         width: 100%; }
-      .columns .column.sm\:skips-24 {
+      .columns .column.sm\:skip-24 {
         margin-left: 100%; } }
     @media screen and (min-width: 768px) {
-      .columns .column.md\:spans-1 {
+      .columns .column.md\:span-1 {
         flex: none;
         width: 4.16667%; }
-      .columns .column.md\:skips-1 {
+      .columns .column.md\:skip-1 {
         margin-left: 4.16667%; }
-      .columns .column.md\:spans-2 {
+      .columns .column.md\:span-2 {
         flex: none;
         width: 8.33333%; }
-      .columns .column.md\:skips-2 {
+      .columns .column.md\:skip-2 {
         margin-left: 8.33333%; }
-      .columns .column.md\:spans-3 {
+      .columns .column.md\:span-3 {
         flex: none;
         width: 12.5%; }
-      .columns .column.md\:skips-3 {
+      .columns .column.md\:skip-3 {
         margin-left: 12.5%; }
-      .columns .column.md\:spans-4 {
+      .columns .column.md\:span-4 {
         flex: none;
         width: 16.66667%; }
-      .columns .column.md\:skips-4 {
+      .columns .column.md\:skip-4 {
         margin-left: 16.66667%; }
-      .columns .column.md\:spans-5 {
+      .columns .column.md\:span-5 {
         flex: none;
         width: 20.83333%; }
-      .columns .column.md\:skips-5 {
+      .columns .column.md\:skip-5 {
         margin-left: 20.83333%; }
-      .columns .column.md\:spans-6 {
+      .columns .column.md\:span-6 {
         flex: none;
         width: 25%; }
-      .columns .column.md\:skips-6 {
+      .columns .column.md\:skip-6 {
         margin-left: 25%; }
-      .columns .column.md\:spans-7 {
+      .columns .column.md\:span-7 {
         flex: none;
         width: 29.16667%; }
-      .columns .column.md\:skips-7 {
+      .columns .column.md\:skip-7 {
         margin-left: 29.16667%; }
-      .columns .column.md\:spans-8 {
+      .columns .column.md\:span-8 {
         flex: none;
         width: 33.33333%; }
-      .columns .column.md\:skips-8 {
+      .columns .column.md\:skip-8 {
         margin-left: 33.33333%; }
-      .columns .column.md\:spans-9 {
+      .columns .column.md\:span-9 {
         flex: none;
         width: 37.5%; }
-      .columns .column.md\:skips-9 {
+      .columns .column.md\:skip-9 {
         margin-left: 37.5%; }
-      .columns .column.md\:spans-10 {
+      .columns .column.md\:span-10 {
         flex: none;
         width: 41.66667%; }
-      .columns .column.md\:skips-10 {
+      .columns .column.md\:skip-10 {
         margin-left: 41.66667%; }
-      .columns .column.md\:spans-11 {
+      .columns .column.md\:span-11 {
         flex: none;
         width: 45.83333%; }
-      .columns .column.md\:skips-11 {
+      .columns .column.md\:skip-11 {
         margin-left: 45.83333%; }
-      .columns .column.md\:spans-12 {
+      .columns .column.md\:span-12 {
         flex: none;
         width: 50%; }
-      .columns .column.md\:skips-12 {
+      .columns .column.md\:skip-12 {
         margin-left: 50%; }
-      .columns .column.md\:spans-13 {
+      .columns .column.md\:span-13 {
         flex: none;
         width: 54.16667%; }
-      .columns .column.md\:skips-13 {
+      .columns .column.md\:skip-13 {
         margin-left: 54.16667%; }
-      .columns .column.md\:spans-14 {
+      .columns .column.md\:span-14 {
         flex: none;
         width: 58.33333%; }
-      .columns .column.md\:skips-14 {
+      .columns .column.md\:skip-14 {
         margin-left: 58.33333%; }
-      .columns .column.md\:spans-15 {
+      .columns .column.md\:span-15 {
         flex: none;
         width: 62.5%; }
-      .columns .column.md\:skips-15 {
+      .columns .column.md\:skip-15 {
         margin-left: 62.5%; }
-      .columns .column.md\:spans-16 {
+      .columns .column.md\:span-16 {
         flex: none;
         width: 66.66667%; }
-      .columns .column.md\:skips-16 {
+      .columns .column.md\:skip-16 {
         margin-left: 66.66667%; }
-      .columns .column.md\:spans-17 {
+      .columns .column.md\:span-17 {
         flex: none;
         width: 70.83333%; }
-      .columns .column.md\:skips-17 {
+      .columns .column.md\:skip-17 {
         margin-left: 70.83333%; }
-      .columns .column.md\:spans-18 {
+      .columns .column.md\:span-18 {
         flex: none;
         width: 75%; }
-      .columns .column.md\:skips-18 {
+      .columns .column.md\:skip-18 {
         margin-left: 75%; }
-      .columns .column.md\:spans-19 {
+      .columns .column.md\:span-19 {
         flex: none;
         width: 79.16667%; }
-      .columns .column.md\:skips-19 {
+      .columns .column.md\:skip-19 {
         margin-left: 79.16667%; }
-      .columns .column.md\:spans-20 {
+      .columns .column.md\:span-20 {
         flex: none;
         width: 83.33333%; }
-      .columns .column.md\:skips-20 {
+      .columns .column.md\:skip-20 {
         margin-left: 83.33333%; }
-      .columns .column.md\:spans-21 {
+      .columns .column.md\:span-21 {
         flex: none;
         width: 87.5%; }
-      .columns .column.md\:skips-21 {
+      .columns .column.md\:skip-21 {
         margin-left: 87.5%; }
-      .columns .column.md\:spans-22 {
+      .columns .column.md\:span-22 {
         flex: none;
         width: 91.66667%; }
-      .columns .column.md\:skips-22 {
+      .columns .column.md\:skip-22 {
         margin-left: 91.66667%; }
-      .columns .column.md\:spans-23 {
+      .columns .column.md\:span-23 {
         flex: none;
         width: 95.83333%; }
-      .columns .column.md\:skips-23 {
+      .columns .column.md\:skip-23 {
         margin-left: 95.83333%; }
-      .columns .column.md\:spans-24 {
+      .columns .column.md\:span-24 {
         flex: none;
         width: 100%; }
-      .columns .column.md\:skips-24 {
+      .columns .column.md\:skip-24 {
         margin-left: 100%; } }
     @media screen and (min-width: 1024px) {
-      .columns .column.lg\:spans-1 {
+      .columns .column.lg\:span-1 {
         flex: none;
         width: 4.16667%; }
-      .columns .column.lg\:skips-1 {
+      .columns .column.lg\:skip-1 {
         margin-left: 4.16667%; }
-      .columns .column.lg\:spans-2 {
+      .columns .column.lg\:span-2 {
         flex: none;
         width: 8.33333%; }
-      .columns .column.lg\:skips-2 {
+      .columns .column.lg\:skip-2 {
         margin-left: 8.33333%; }
-      .columns .column.lg\:spans-3 {
+      .columns .column.lg\:span-3 {
         flex: none;
         width: 12.5%; }
-      .columns .column.lg\:skips-3 {
+      .columns .column.lg\:skip-3 {
         margin-left: 12.5%; }
-      .columns .column.lg\:spans-4 {
+      .columns .column.lg\:span-4 {
         flex: none;
         width: 16.66667%; }
-      .columns .column.lg\:skips-4 {
+      .columns .column.lg\:skip-4 {
         margin-left: 16.66667%; }
-      .columns .column.lg\:spans-5 {
+      .columns .column.lg\:span-5 {
         flex: none;
         width: 20.83333%; }
-      .columns .column.lg\:skips-5 {
+      .columns .column.lg\:skip-5 {
         margin-left: 20.83333%; }
-      .columns .column.lg\:spans-6 {
+      .columns .column.lg\:span-6 {
         flex: none;
         width: 25%; }
-      .columns .column.lg\:skips-6 {
+      .columns .column.lg\:skip-6 {
         margin-left: 25%; }
-      .columns .column.lg\:spans-7 {
+      .columns .column.lg\:span-7 {
         flex: none;
         width: 29.16667%; }
-      .columns .column.lg\:skips-7 {
+      .columns .column.lg\:skip-7 {
         margin-left: 29.16667%; }
-      .columns .column.lg\:spans-8 {
+      .columns .column.lg\:span-8 {
         flex: none;
         width: 33.33333%; }
-      .columns .column.lg\:skips-8 {
+      .columns .column.lg\:skip-8 {
         margin-left: 33.33333%; }
-      .columns .column.lg\:spans-9 {
+      .columns .column.lg\:span-9 {
         flex: none;
         width: 37.5%; }
-      .columns .column.lg\:skips-9 {
+      .columns .column.lg\:skip-9 {
         margin-left: 37.5%; }
-      .columns .column.lg\:spans-10 {
+      .columns .column.lg\:span-10 {
         flex: none;
         width: 41.66667%; }
-      .columns .column.lg\:skips-10 {
+      .columns .column.lg\:skip-10 {
         margin-left: 41.66667%; }
-      .columns .column.lg\:spans-11 {
+      .columns .column.lg\:span-11 {
         flex: none;
         width: 45.83333%; }
-      .columns .column.lg\:skips-11 {
+      .columns .column.lg\:skip-11 {
         margin-left: 45.83333%; }
-      .columns .column.lg\:spans-12 {
+      .columns .column.lg\:span-12 {
         flex: none;
         width: 50%; }
-      .columns .column.lg\:skips-12 {
+      .columns .column.lg\:skip-12 {
         margin-left: 50%; }
-      .columns .column.lg\:spans-13 {
+      .columns .column.lg\:span-13 {
         flex: none;
         width: 54.16667%; }
-      .columns .column.lg\:skips-13 {
+      .columns .column.lg\:skip-13 {
         margin-left: 54.16667%; }
-      .columns .column.lg\:spans-14 {
+      .columns .column.lg\:span-14 {
         flex: none;
         width: 58.33333%; }
-      .columns .column.lg\:skips-14 {
+      .columns .column.lg\:skip-14 {
         margin-left: 58.33333%; }
-      .columns .column.lg\:spans-15 {
+      .columns .column.lg\:span-15 {
         flex: none;
         width: 62.5%; }
-      .columns .column.lg\:skips-15 {
+      .columns .column.lg\:skip-15 {
         margin-left: 62.5%; }
-      .columns .column.lg\:spans-16 {
+      .columns .column.lg\:span-16 {
         flex: none;
         width: 66.66667%; }
-      .columns .column.lg\:skips-16 {
+      .columns .column.lg\:skip-16 {
         margin-left: 66.66667%; }
-      .columns .column.lg\:spans-17 {
+      .columns .column.lg\:span-17 {
         flex: none;
         width: 70.83333%; }
-      .columns .column.lg\:skips-17 {
+      .columns .column.lg\:skip-17 {
         margin-left: 70.83333%; }
-      .columns .column.lg\:spans-18 {
+      .columns .column.lg\:span-18 {
         flex: none;
         width: 75%; }
-      .columns .column.lg\:skips-18 {
+      .columns .column.lg\:skip-18 {
         margin-left: 75%; }
-      .columns .column.lg\:spans-19 {
+      .columns .column.lg\:span-19 {
         flex: none;
         width: 79.16667%; }
-      .columns .column.lg\:skips-19 {
+      .columns .column.lg\:skip-19 {
         margin-left: 79.16667%; }
-      .columns .column.lg\:spans-20 {
+      .columns .column.lg\:span-20 {
         flex: none;
         width: 83.33333%; }
-      .columns .column.lg\:skips-20 {
+      .columns .column.lg\:skip-20 {
         margin-left: 83.33333%; }
-      .columns .column.lg\:spans-21 {
+      .columns .column.lg\:span-21 {
         flex: none;
         width: 87.5%; }
-      .columns .column.lg\:skips-21 {
+      .columns .column.lg\:skip-21 {
         margin-left: 87.5%; }
-      .columns .column.lg\:spans-22 {
+      .columns .column.lg\:span-22 {
         flex: none;
         width: 91.66667%; }
-      .columns .column.lg\:skips-22 {
+      .columns .column.lg\:skip-22 {
         margin-left: 91.66667%; }
-      .columns .column.lg\:spans-23 {
+      .columns .column.lg\:span-23 {
         flex: none;
         width: 95.83333%; }
-      .columns .column.lg\:skips-23 {
+      .columns .column.lg\:skip-23 {
         margin-left: 95.83333%; }
-      .columns .column.lg\:spans-24 {
+      .columns .column.lg\:span-24 {
         flex: none;
         width: 100%; }
-      .columns .column.lg\:skips-24 {
+      .columns .column.lg\:skip-24 {
         margin-left: 100%; } }
     @media screen and (min-width: 1280px) {
-      .columns .column.xl\:spans-1 {
+      .columns .column.xl\:span-1 {
         flex: none;
         width: 4.16667%; }
-      .columns .column.xl\:skips-1 {
+      .columns .column.xl\:skip-1 {
         margin-left: 4.16667%; }
-      .columns .column.xl\:spans-2 {
+      .columns .column.xl\:span-2 {
         flex: none;
         width: 8.33333%; }
-      .columns .column.xl\:skips-2 {
+      .columns .column.xl\:skip-2 {
         margin-left: 8.33333%; }
-      .columns .column.xl\:spans-3 {
+      .columns .column.xl\:span-3 {
         flex: none;
         width: 12.5%; }
-      .columns .column.xl\:skips-3 {
+      .columns .column.xl\:skip-3 {
         margin-left: 12.5%; }
-      .columns .column.xl\:spans-4 {
+      .columns .column.xl\:span-4 {
         flex: none;
         width: 16.66667%; }
-      .columns .column.xl\:skips-4 {
+      .columns .column.xl\:skip-4 {
         margin-left: 16.66667%; }
-      .columns .column.xl\:spans-5 {
+      .columns .column.xl\:span-5 {
         flex: none;
         width: 20.83333%; }
-      .columns .column.xl\:skips-5 {
+      .columns .column.xl\:skip-5 {
         margin-left: 20.83333%; }
-      .columns .column.xl\:spans-6 {
+      .columns .column.xl\:span-6 {
         flex: none;
         width: 25%; }
-      .columns .column.xl\:skips-6 {
+      .columns .column.xl\:skip-6 {
         margin-left: 25%; }
-      .columns .column.xl\:spans-7 {
+      .columns .column.xl\:span-7 {
         flex: none;
         width: 29.16667%; }
-      .columns .column.xl\:skips-7 {
+      .columns .column.xl\:skip-7 {
         margin-left: 29.16667%; }
-      .columns .column.xl\:spans-8 {
+      .columns .column.xl\:span-8 {
         flex: none;
         width: 33.33333%; }
-      .columns .column.xl\:skips-8 {
+      .columns .column.xl\:skip-8 {
         margin-left: 33.33333%; }
-      .columns .column.xl\:spans-9 {
+      .columns .column.xl\:span-9 {
         flex: none;
         width: 37.5%; }
-      .columns .column.xl\:skips-9 {
+      .columns .column.xl\:skip-9 {
         margin-left: 37.5%; }
-      .columns .column.xl\:spans-10 {
+      .columns .column.xl\:span-10 {
         flex: none;
         width: 41.66667%; }
-      .columns .column.xl\:skips-10 {
+      .columns .column.xl\:skip-10 {
         margin-left: 41.66667%; }
-      .columns .column.xl\:spans-11 {
+      .columns .column.xl\:span-11 {
         flex: none;
         width: 45.83333%; }
-      .columns .column.xl\:skips-11 {
+      .columns .column.xl\:skip-11 {
         margin-left: 45.83333%; }
-      .columns .column.xl\:spans-12 {
+      .columns .column.xl\:span-12 {
         flex: none;
         width: 50%; }
-      .columns .column.xl\:skips-12 {
+      .columns .column.xl\:skip-12 {
         margin-left: 50%; }
-      .columns .column.xl\:spans-13 {
+      .columns .column.xl\:span-13 {
         flex: none;
         width: 54.16667%; }
-      .columns .column.xl\:skips-13 {
+      .columns .column.xl\:skip-13 {
         margin-left: 54.16667%; }
-      .columns .column.xl\:spans-14 {
+      .columns .column.xl\:span-14 {
         flex: none;
         width: 58.33333%; }
-      .columns .column.xl\:skips-14 {
+      .columns .column.xl\:skip-14 {
         margin-left: 58.33333%; }
-      .columns .column.xl\:spans-15 {
+      .columns .column.xl\:span-15 {
         flex: none;
         width: 62.5%; }
-      .columns .column.xl\:skips-15 {
+      .columns .column.xl\:skip-15 {
         margin-left: 62.5%; }
-      .columns .column.xl\:spans-16 {
+      .columns .column.xl\:span-16 {
         flex: none;
         width: 66.66667%; }
-      .columns .column.xl\:skips-16 {
+      .columns .column.xl\:skip-16 {
         margin-left: 66.66667%; }
-      .columns .column.xl\:spans-17 {
+      .columns .column.xl\:span-17 {
         flex: none;
         width: 70.83333%; }
-      .columns .column.xl\:skips-17 {
+      .columns .column.xl\:skip-17 {
         margin-left: 70.83333%; }
-      .columns .column.xl\:spans-18 {
+      .columns .column.xl\:span-18 {
         flex: none;
         width: 75%; }
-      .columns .column.xl\:skips-18 {
+      .columns .column.xl\:skip-18 {
         margin-left: 75%; }
-      .columns .column.xl\:spans-19 {
+      .columns .column.xl\:span-19 {
         flex: none;
         width: 79.16667%; }
-      .columns .column.xl\:skips-19 {
+      .columns .column.xl\:skip-19 {
         margin-left: 79.16667%; }
-      .columns .column.xl\:spans-20 {
+      .columns .column.xl\:span-20 {
         flex: none;
         width: 83.33333%; }
-      .columns .column.xl\:skips-20 {
+      .columns .column.xl\:skip-20 {
         margin-left: 83.33333%; }
-      .columns .column.xl\:spans-21 {
+      .columns .column.xl\:span-21 {
         flex: none;
         width: 87.5%; }
-      .columns .column.xl\:skips-21 {
+      .columns .column.xl\:skip-21 {
         margin-left: 87.5%; }
-      .columns .column.xl\:spans-22 {
+      .columns .column.xl\:span-22 {
         flex: none;
         width: 91.66667%; }
-      .columns .column.xl\:skips-22 {
+      .columns .column.xl\:skip-22 {
         margin-left: 91.66667%; }
-      .columns .column.xl\:spans-23 {
+      .columns .column.xl\:span-23 {
         flex: none;
         width: 95.83333%; }
-      .columns .column.xl\:skips-23 {
+      .columns .column.xl\:skip-23 {
         margin-left: 95.83333%; }
-      .columns .column.xl\:spans-24 {
+      .columns .column.xl\:span-24 {
         flex: none;
         width: 100%; }
-      .columns .column.xl\:skips-24 {
+      .columns .column.xl\:skip-24 {
         margin-left: 100%; } }
 
 /* @elements - container */
