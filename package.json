@@ -6,7 +6,8 @@
     "name": "ebxn",
     "email": "ebengtuff@gmail.com"
   },
-  "description": "A DESCRIPTION",
+  "description": "A minimal CSS framework to be sprinkled throughout your projects!",
+  "main": "dist/sprinkl.min.css",
   "style": "dist/sprinkl.min.css",
   "files": [
     "dist/*.css",

@@ -17,8 +17,8 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 figure,
 blockquote,
 dl,
@@ -35,7 +35,6 @@ html {
 
 /* set core body defaults */
 body {
-  min-height: 100vh; // subject to change
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
