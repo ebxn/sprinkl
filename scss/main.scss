@@ -7,6 +7,10 @@
 
 @import "variables/_all";
 @import "mixins/_all";
+
+/*! purgecss start ignore */
 @import "reset";
+/*! purgecss end ignore */
+
 @import "utilities/_all";
 @import "elements/_all";

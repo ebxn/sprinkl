@@ -3,6 +3,7 @@
 /*! sprinkl v0.1.5 | MIT License | github.com/ebxn/sprinkl */
 /*          Thank you for choosing sprinkl (・∀・)ノ        */
 /* ******************************************************* */
+/*! purgecss start ignore */
 /**
  * Reset
  *
@@ -120,6 +121,7 @@ button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 
+/*! purgecss end ignore */
 /**
  * Utilities
  */
