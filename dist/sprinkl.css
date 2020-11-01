@@ -1,14 +1,36 @@
 @charset "UTF-8";
 /* ******************************************************* */
-/*! sprinkl v0.1.4 | MIT License | github.com/ebxn/sprinkl */
+/*! sprinkl v0.1.5 | MIT License | github.com/ebxn/sprinkl */
 /*          Thank you for choosing sprinkl (・∀・)ノ        */
 /* ******************************************************* */
-/* @base - reset */
+/**
+ * Variables
+ */
+/**
+ * Reset
+ *
+ * heavily influenced by:
+ * https://github.com/hankchizljaw/modern-css-reset
+ * https://github.com/tailwindlabs/tailwindcss/ ...
+ */
 /* box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box; }
+
+/* set core html defaults */
+html {
+  background-color: #fff;
+  font-size: 16px;
+  scroll-behavior: smooth; }
+
+/* set core body defaults */
+body {
+  color: #161e2e;
+  font-family: "Inter", "Inter Var", "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
 
 /* remove default margins */
 body,
@@ -19,6 +41,8 @@ h4,
 h5,
 h6,
 p,
+pre,
+hr,
 ul,
 ol,
 figure,
@@ -26,17 +50,6 @@ blockquote,
 dl,
 dd {
   margin: 0; }
-
-/* set core html defaults */
-html {
-  background-color: #fff;
-  font-size: 16px;
-  scroll-behavior: smooth; }
-
-/* set core body defaults */
-body {
-  text-rendering: optimizeSpeed;
-  line-height: 1.5; }
 
 /* reset heading font sizes and weights */
 h1,
@@ -59,6 +72,27 @@ a {
   color: inherit;
   text-decoration: inherit; }
 
+/* natural flow and rhythm in articles */
+article > * + * {
+  margin-top: 1rem; }
+
+/* ensure monospace font-family */
+code,
+pre,
+kbd,
+samp {
+  font-family: "source-code-pro", "Menlo", "Monaco", "Consolas", "Courier New", monospace; }
+
+/* display horizontal rules using border */
+hr {
+  box-sizing: content-box;
+  overflow: visible;
+  border-width: 0;
+  border-top-width: 1px;
+  border-style: solid;
+  border-color: #e2e8f0;
+  height: 0; }
+
 /* make media easier to work with */
 img,
 picture,
@@ -66,10 +100,6 @@ video {
   display: block;
   max-width: 100%;
   height: auto; }
-
-/* natural flow and rhythm in articles */
-article > * + * {
-  margin-top: 1rem; }
 
 /* inherit fonts for inputs and buttons */
 input,
@@ -93,47 +123,9 @@ button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important; } }
 
-/* @base - typography */
-/* set core text defaults */
-body {
-  color: #161e2e;
-  font-family: "Inter", "Inter Var", "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-
-/* display horizontal rules using border */
-hr {
-  box-sizing: content-box;
-  overflow: visible;
-  border-width: 0;
-  border-top-width: 1px;
-  border-style: solid;
-  border-color: #e2e8f0;
-  height: 0; }
-
-/* ensure mono font family */
-code,
-pre,
-kbd,
-samp {
-  font-family: "source-code-pro", "Menlo", "Monaco", "Consolas", "Courier New", monospace; }
-
-/* @elements - container */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%; }
-  @media screen and (min-width: 640px) {
-    .container {
-      max-width: 640px; } }
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px; } }
-  @media screen and (min-width: 1024px) {
-    .container:not(.narrow) {
-      max-width: 1024px; } }
-  @media screen and (min-width: 1280px) {
-    .container:not(.narrow) {
-      max-width: 1280px; } }
-
+/**
+ * Utilities
+ */
 /* @utilities - display */
 .d-b {
   display: block; }
@@ -8146,3 +8138,23 @@ samp {
     text-align: right; }
   .xl\:t-j {
     text-align: justify; } }
+
+/**
+ * Container
+ */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+  @media screen and (min-width: 640px) {
+    .container {
+      max-width: 640px; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px; } }
+  @media screen and (min-width: 1024px) {
+    .container:not(.narrow) {
+      max-width: 1024px; } }
+  @media screen and (min-width: 1280px) {
+    .container:not(.narrow) {
+      max-width: 1280px; } }

@@ -1,11 +1,12 @@
 /* ******************************************************* */
-/*! sprinkl v0.1.4 | MIT License | github.com/ebxn/sprinkl */
+/*! sprinkl v0.1.5 | MIT License | github.com/ebxn/sprinkl */
 /*          Thank you for choosing sprinkl (・∀・)ノ        */
 /* ******************************************************* */
 
-@charset 'UTF-8';
+@charset "UTF-8";
 
-@import 'abstracts/_all';
-@import 'base/_all';
-@import 'elements/_all';
-@import 'utilities/_all';
+@import "variables/_all";
+@import "mixins/_all";
+@import "reset";
+@import "utilities/_all";
+@import "elements/_all";
