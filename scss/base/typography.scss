@@ -10,7 +10,10 @@ body {
 hr {
   box-sizing: content-box;
   overflow: visible;
+  border-width: 0;
   border-top-width: 1px;
+  border-style: solid;
+  border-color: $cool-grey-200;
   height: 0;
 }
 
